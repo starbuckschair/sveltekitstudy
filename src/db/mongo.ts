@@ -11,7 +11,6 @@ const client = new MongoClient(MONGO_URL);
 
 export function start_mongo(): Promise<MongoClient> {
 	console.log('Starting mongo...');
-
 	return client.connect();
 }
 
